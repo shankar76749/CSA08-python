@@ -1,0 +1,34 @@
+def transpose_matrix(matrix):
+    """Return the transpose of the given matrix."""
+    # Get the number of rows and columns
+    rows = len(matrix)
+    cols = len(matrix[0])
+    
+    # Create a new matrix with transposed dimensions
+    transposed = [[0] * rows for _ in range(cols)]
+    
+    # Populate the transposed matrix
+    for i in range(rows):
+        for j in range(cols):
+            transposed[j][i] = matrix[i][j]
+    
+    return transposed
+
+# Sample input
+matrix = [
+    [4, 6, 7, 8],
+    [3, 7, 2, 7],
+    [7, 3, 7, 5]
+]
+
+# Get the transpose of the matrix
+transposed_matrix = transpose_matrix(matrix)
+
+# Print the original and transposed matrices
+print("Original matrix:")
+for row in matrix:
+    print(row)
+
+print("\nTransposed matrix:")
+for row in transposed_matrix:
+    print(row)

@@ -1,0 +1,31 @@
+def remove_k_digits(num, k):
+    """Return the smallest possible integer after removing k digits from num."""
+    stack = []
+    
+    for digit in num:
+        # While stack is not empty, k > 0 and the last digit in stack is greater than the current digit
+        while k > 0 and stack and stack[-1] > digit:
+            stack.pop()
+            k -= 1
+        stack.append(digit)
+    
+    # If k is still greater than 0, remove the last k digits
+    while k > 0:
+        stack.pop()
+        k -= 1
+    
+    # Join the stack to form the result and remove leading zeros
+    result = ''.join(stack).lstrip('0')
+    
+    # Return '0' if the result is empty
+    return result if result else '0'
+
+# Sample input
+num = "1432219"
+k = 3
+
+# Compute the smallest possible integer after removing k digits
+smallest_num = remove_k_digits(num, k)
+
+# Print the result
+print(f"Output: {smallest_num}")

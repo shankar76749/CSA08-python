@@ -1,0 +1,27 @@
+
+def binary_to_decimal(binary_str):
+    """Convert a binary string to a decimal integer."""
+    return int(binary_str, 2)
+
+def find_max_binary(binary_list):
+    """Return the maximum binary value from the given list."""
+    max_binary = binary_list[0]
+    max_value = binary_to_decimal(max_binary)
+    
+    for binary in binary_list[1:]:
+        decimal_value = binary_to_decimal(binary)
+        if decimal_value > max_value:
+            max_value = decimal_value
+            max_binary = binary
+            
+    return max_binary
+
+# Sample input
+binary_numbers = ["1101", "1011", "1001"]
+
+# Find the maximum binary value
+max_binary_number = find_max_binary(binary_numbers)
+
+# Print the result
+print(f"Maximum Number: {max_binary
+

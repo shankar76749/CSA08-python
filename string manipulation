@@ -1,0 +1,10 @@
+message = "Python is awesome!"
+
+# Length of string
+print(len(message))
+
+# Concatenation
+new_message = message + " Let's code!"
+
+# String slicing
+print(message[0:6])  # Output: Python

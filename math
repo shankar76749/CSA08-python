@@ -1,0 +1,14 @@
+a = 10
+b = 5
+
+# Addition
+sum = a + b
+
+# Subtraction
+difference = a - b
+
+# Multiplication
+product = a * b
+
+# Division
+quotient = a / b

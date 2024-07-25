@@ -1,0 +1,16 @@
+# Multiple inheritance example
+class A:
+    def method_A(self):
+        print("Method A")
+
+class B:
+    def method_B(self):
+        print("Method B")
+
+class C(A, B):
+    def method_C(self):
+        print("Method C")
+
+obj = C()
+obj.method_A()
+obj.method_B()

@@ -1,0 +1,13 @@
+# Excel file manipulation
+import openpyxl
+
+# Reading Excel file
+wb = openpyxl.load_workbook('data.xlsx')
+sheet = wb.active
+
+# Accessing cells
+cell_value = sheet['A1'].value
+
+# Writing to Excel file
+sheet['B1'] = 'New Value'
+wb.save('output.xlsx')

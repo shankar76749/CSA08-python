@@ -1,0 +1,14 @@
+# CSV file manipulation
+import csv
+
+# Reading CSV file
+with open('data.csv', newline='') as csvfile:
+    reader = csv.reader(csvfile, delimiter=',')
+    for row in reader:
+        print(', '.join(row))
+
+# Writing to CSV file
+with open('output.csv', mode='w', newline='') as csvfile:
+    writer = csv.writer(csvfile)
+    writer.writerow(['Name', 'Age'])
+    writer.writerow(['Alice', 30])

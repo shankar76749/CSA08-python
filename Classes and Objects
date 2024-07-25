@@ -1,0 +1,12 @@
+# Class definition
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+    
+    def greet(self):
+        return "Hello, my name is " + self.name
+
+# Object instantiation
+person1 = Person("Alice", 30)
+print(person1.greet())   # Output: Hello, my name is Alice

@@ -1,0 +1,13 @@
+# Creating a dictionary
+person = {
+    "name": "Alice",
+    "age": 30,
+    "city": "New York"
+}
+
+# Accessing values
+print(person["name"])   # Output: Alice
+
+# Dictionary methods
+person["email"] = "alice@example.com"
+del person["city"]

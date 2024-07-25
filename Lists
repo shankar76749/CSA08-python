@@ -1,0 +1,10 @@
+# Creating a list
+numbers = [1, 2, 3, 4, 5]
+fruits = ["apple", "banana", "cherry"]
+
+# Accessing elements
+print(numbers[0])   # Output: 1
+
+# List methods
+numbers.append(6)
+fruits.remove("banana")

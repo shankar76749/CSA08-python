@@ -1,0 +1,5 @@
+# Creating a tuple
+coordinates = (10, 20)
+
+# Unpacking tuples
+x, y = coordinates
